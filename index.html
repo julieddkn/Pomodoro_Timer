@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ pomodoro timer ]</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+
+
+<!--   
+Pomodoro Timer.
+But - Chronomètre de 4 sessions de travail, avec des pauses.
+Fonctionnalités - Choisir la tâche à effectuer / Définir la durée des sessions de travail (25 min par défaut) / Définir la durée des pauses (5 min par défaut) / Définir lenombre  de sessions de travail (4 par défaut)
+En plus - Ambiance musicale, play / pause / next (foret, ocean, etc)
+Plus tard - Déveloper en app, avec un système de badges à débloquer.
+-->
+
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Pomodoro Timer.</h1>
+            <img class="anime" src="/media/anime.gif" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam neque totam culpa reiciendis laborum aperiam asperiores ratione vitae quia vel voluptate nesciunt itaque, rem, hic ipsum deserunt ut beatae ducimus!</p>
+        </header>
+        <main>
+
+            <div class="box task">
+                <textarea name="" id="task" cols="30" rows="6"></textarea>
+            </div>
+
+            <div class="box timer work-timer">
+                <div class="work-hour">00</div>
+                <div class="dots">:</div>
+                <div class="work-minute">25</div>
+                <div class="dots">:</div>
+                <div class="work-second">00</div>
+            </div>
+
+            <div class="box timer break-timer">
+                <div class="break-hour">00</div>
+                <div class="dots">:</div>
+                <div class="break-minute">05</div>
+                <div class="dots">:</div>
+                <div class="break-second">00</div>
+            </div>
+
+            <div class="box btn-go">
+                <button id="go">GO</button>
+            </div>
+
+        </main>
+        <footer></footer>
+
+    </div>
+
+    <script type="text/javascript" src="scripts/main.js"></script>
+
+</body>
+
+</html>
